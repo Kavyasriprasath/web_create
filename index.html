@@ -4,12 +4,13 @@
         <style>
             .ak{border-color: black;display:flex;margin: 10px 0;}
             .ka{border-radius: 10px;text-align:left;width: 450px;height: 40px;}
-            .hr{flex-grow: 1;border-top: 1px black;margin: 0;}
+            .hr{display:flex-grow 1;border-top: 1px black;margin: 0;}
             .al{border-radius: 10px;padding-inline: 100px;text-align:center;width: 450px;height: 40px;}
             .span{font-size:16px;}
             .img{margin:0 20px;}
             .but{background-color:white;border-radius: 10px;padding-inline:100px ;text-align: center;width:450px;height:40px;display: flex;align-items:center;justify-content: center;border:1px solid grey;}}
         </style>
+        
         
     </head>
     <body style="margin:0px;"> 
@@ -23,20 +24,23 @@
 
 <button class="but"><span><img src="https://ik.imagekit.io/5bifwbliaa/G.png?updatedAt=1716461864689" width="17px"height="17px"></span><span style "padding-left:2px"><h3>Sign in with Google</h3></span></button>
 
-<div class="ak">
- <hr width="150px"> <span>or sign with Email</span><hr width="150px">
+<div class="ak" >
+ <hr width="100"> <span>or sign with Email</span><hr width="100">
 </div>     
-
+<form id="form">
    <h3>Email</h3>
-    <input type="text" placeholder="mail@gmail.com" class="ka">
+    <input type ="text" id="email" placeholder="mail@gmail.com" class="ka"><br>
+    <span id="email_error" style="color:red"></span>
     <h3>Password</h3>
-    <input type="text" placeholder="Min 8charecter" class="ka">
+    <input type="text" id="password" placeholder="Min 8charecter" class="ka"><br>
+    <span id="pass_error" style="color:red"></span>
     <br><br>
     <div style="display:flex;">
     <font size="3px"><input type="checkbox">Remember Me<span style="padding-left:200px;"><font style= "color:#6841DA;">Forgot password?</font></span></font></div>
-   
+
     <br><br>
-    <input type="submit" value="Login" style="background-color:#6841DA;boder-color:#6841DA;color:white;"class="al">
+    <button type="submit" style="background-color:#6841DA; border-color:#6841DA; color:white;"class="al">Login</button>
+</form>
     <div style="display:flex;"><h5>Not Registered yet?</h5><span style="padding-left:0px;"></span><font style= "color:#6841DA;"><h5>Create An Account</h5></font></div>
     <br>
     
@@ -55,7 +59,8 @@
 <p>Quality experience on all devices</h5></p></font></center>
 </div>
 </section>
+<script src="Script.js"></script>
 </body>    
 </html>
-
+                                                    
 
